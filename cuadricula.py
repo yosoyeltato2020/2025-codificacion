@@ -31,7 +31,7 @@ def dibujar_cuadricula():
             print("║" + contenido + "║")
 
 
-print("Dimensiones del terminal: contador de  columnas = ", str(dimensiones["col"]).ljust(20), "contador de  líneas =", str(dimensiones["lines"]).ljust(20))
+print("Dimensiones del terminal: Contador de  columnas = ", str(dimensiones["col"]).ljust(60), "Contador de  líneas =", str(dimensiones["lines"]).ljust(20))
 
 if __name__ == "__main__":
     dibujar_cuadricula()
