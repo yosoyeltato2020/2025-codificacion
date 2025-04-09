@@ -29,5 +29,5 @@ def dibujar_cuadricula():
             print("║" + contenido + "║")
 
 
-print(VERDE + f"Dimensiones del terminal: columnas = {dimensiones['col']}, líneas = {dimensiones['lines']}" + RESET)
+print(f" Contador de las dimensiones del terminal: Contador de las = {dimensiones['col']}, contador de las líneas = {dimensiones['lines']}")
 dibujar_cuadricula()
