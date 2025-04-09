@@ -1,5 +1,7 @@
 import os
-
+Rojo = "\033[31m"
+verde = "\033[32m"
+blanco = "\033[37m"
 
 dimensiones = {
     "col": os.get_terminal_size().columns,
@@ -21,13 +23,19 @@ def dibujar_cuadricula():
         else:
             if linea % 2 == 0:
               
-                contenido = "#" * (ancho - 2)
+                contenido = Rojo + "#" * (ancho - 2) + blanco
             else:
               
-                contenido = "*" * (ancho - 2)
+                contenido = verde +  "*" * (ancho - 2) + blanco
            
             print("║" + contenido + "║")
 
 
-print(f"Dimensiones del terminal: contador de  columnas = {dimensiones['col']},contador de  líneas = {dimensiones['lines']}")
-dibujar_cuadricula()
+print("Dimensiones del terminal: contador de  columnas = ", str(dimensiones["col"]).ljust(20), "contador de  líneas =", str(dimensiones["lines"]).ljust(20))
+
+if __name__ == "__main__":
+    dibujar_cuadricula()
+print("Registro 1   ")
+print("Registro 2   ")
+print("Registro 3   ")  
+
