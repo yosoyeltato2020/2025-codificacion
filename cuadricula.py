@@ -11,7 +11,7 @@ def dibujar_cuadricula():
     ancho = dimensiones["col"]
     alto = dimensiones["lines"]
 
-    for linea in range(alto):
+    for linea in range(0,alto):
         if linea == 0:
            
             print("╔" + "═" * (ancho - 2) + "╗")
@@ -29,5 +29,5 @@ def dibujar_cuadricula():
             print("║" + contenido + "║")
 
 
-print(VERDE + f"Dimensiones del terminal: columnas = {dimensiones['col']}, líneas = {dimensiones['lines']}" + RESET)
+print(f"Dimensiones del terminal: contador de  columnas = {dimensiones['col']},contador de  líneas = {dimensiones['lines']}")
 dibujar_cuadricula()
