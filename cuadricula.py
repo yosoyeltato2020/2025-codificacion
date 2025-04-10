@@ -30,13 +30,14 @@ def dibujar_cuadricula():
            
             print(chr(9474) + contenido + chr(9474)) 
 
+def imprimir_registros(numero_registro):
+    # Función para imprimir los registros enumerados
+    for i in range(1, numero_registro + 1):
+        print("Registro ", str(i).ljust(10))
 
 print("Dimensiones del terminal: Contador de  columnas = ", str(dimensiones["col"]).ljust(60), "Contador de  líneas =", str(dimensiones["lines"]).ljust(20))
 
 if __name__ == "__main__":
     dibujar_cuadricula()
-numero_registro = 3
-for i in range (1,numero_registro +1):
-    print("Registro ", str(i).ljust(10))
-         
+    imprimir_registros(3) 
 
